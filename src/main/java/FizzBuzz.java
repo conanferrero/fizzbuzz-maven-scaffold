@@ -7,9 +7,26 @@ public class FizzBuzz {
 
     @Override
     public String toString() {
-        if (this.value % 15 == 0) return "FizzBuzz";
-        if (this.value % 3 == 0) return "Fizz";
-        if (this.value % 5 == 0) return "Buzz";
+        String s1 = returnFizz();
+        String s2 = returnBuzz();
+        String result = s1 + s2;
+        if (!result.isEmpty()) return result;
         return String.valueOf(this.value);
+    }
+
+    private boolean isDivBy(int i)
+    {
+        if (this.value % i == 0) return true;
+        return false;
+    }
+
+    private String returnFizz()
+    {
+        if (isDivBy(3)) return "Fizz";
+        return "";
+    }private String returnBuzz()
+    {
+        if (isDivBy(5)) return "Buzz";
+        return "";
     }
 }
