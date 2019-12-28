@@ -32,9 +32,8 @@ public class FizzBuzzTest {
                     "15,FizzBuzz",
             }
     )
-    void testFizzBuzz(int input, String expected)
-    {
-        FizzBuzz item =  new FizzBuzz(input);
-        assertEquals(expected,item.toString());
+    void testFizzBuzz(int input, String expected) {
+        FizzBuzz item = new FizzBuzz(input);
+        assertEquals(expected, item.toString());
     }
 }

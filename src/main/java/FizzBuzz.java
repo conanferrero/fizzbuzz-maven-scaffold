@@ -14,18 +14,17 @@ public class FizzBuzz {
         return String.valueOf(this.value);
     }
 
-    private boolean isDivBy(int i)
-    {
+    private boolean isDivBy(int i) {
         if (this.value % i == 0) return true;
         return false;
     }
 
-    private String returnFizz()
-    {
+    private String returnFizz() {
         if (isDivBy(3)) return "Fizz";
         return "";
-    }private String returnBuzz()
-    {
+    }
+
+    private String returnBuzz() {
         if (isDivBy(5)) return "Buzz";
         return "";
     }
