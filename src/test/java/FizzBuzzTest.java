@@ -11,5 +11,9 @@ public class FizzBuzzTest {
     void return_Fizz_given_3() {
         FizzBuzz item =  new FizzBuzz(3);
         assertEquals("Fizz",item.toString());
+    }@Test
+    void return_Buzz_given_5() {
+        FizzBuzz item =  new FizzBuzz(5);
+        assertEquals("Buzz",item.toString());
     }
 }
